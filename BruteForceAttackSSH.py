@@ -32,7 +32,7 @@ def bruteForce(InfoHostname):
                 main(hostname=InfoHostname, username=listalogin[login], password=listasenha[senha])
                 print(f'Sucesso, usuario: {listalogin[login]} e Senha: {listasenha[senha]} correto!!')
             except paramiko.ssh_exception.AuthenticationException:
-                print(f'Erro, usuario: {listalogin[login]} e Senha: {listasenha[senha]} incorreta!!')
+                print(f'Erro, usuario: {listalogin[login]} e Senha: {listasenha[senha]} incorreto!!')
                 pass
 
 
