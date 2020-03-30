@@ -10,7 +10,7 @@ def main(hostname, username, password):
     client.set_missing_host_key_policy(AllowAnythingPolicy())
     client.connect(hostname=hostname, username=username, password=password)
     
-    for command in 'echo "Script criado por Eric Reis 99515 | FHO - Sistemas de informacao"','uname':
+    for command in 'echo "Script criado por Eric Reis"','uname':
         stdin, stdout, stderr = client.exec_command(command)
         stdin.close()
         print(repr(stdout.read()))
